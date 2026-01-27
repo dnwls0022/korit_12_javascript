@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head >
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✨My shopping list✨</title>
+  <link rel="stylesheet" href="01_shopping.css">
+  </head>
+<body class="page-container" >
+  <div class="emart-logo">
+  <img src="./emart.jpg" alt="이마트로고">
+  </div>
+  <main class="shopping list app">
+    <ul>1/27</ul>
+    <h1 class="shopping list app"> 나의 쇼핑 리스트</h1>
+    
+    <div class="shopping-app__input-group">
+      
+      <input id="shopping-input" class="shopping-app__input" type="text" placeholder="오늘 살 물건 적어보기! 🎈">
+      <input id="price-input" class="shopping-app__input" type="number" placeholder="오늘 살 물건 가격!  💰">
+
+      <button id="add-btn" class="shopping-app__add-button">기록!</button>
+    </div>
+    <div class="total-price-box">
+    현재 총 합계: <span id="total-display">0</span>원
+</div>
+    <ul id="shopping-list" class="shopping-app__list">
+    </ul>
+  </main>
+
+  <script src="./01_shopping.js"></script>
+</body>
+</html>

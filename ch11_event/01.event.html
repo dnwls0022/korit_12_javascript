@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body bgcolor="5f5f5f">
+  <button onclick="myFunction();">클릭</button>
+  <button id="btn1">클릭</button>
+  <button id="btn2">클릭</button>
+  <script>
+    function myFunction1(){
+      console.log('onclick이벤트실행');
+    }
+    function myFunction2(){
+      console.log('event리스너사용');
+    }
+    document.getElementById('btn1').addEventListener
+    ('click',myFunction2);
+    document.getElementById('btn2').addEventListener
+    ('click',function(){
+      console.log('콜백함수실행');
+    });
+    document.getElementById('btn3').addEventListener
+    ('click', () => console.log(화살표함수실행));
+    
+  </script>
+</body>
+</html>

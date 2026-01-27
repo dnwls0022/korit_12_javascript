@@ -1,0 +1,131 @@
+/* 폰트 설정 */
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2');
+
+@font-face {
+    font-family: 'OngleipKonkon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* 1. 기본 배경 설정 (핑크색 배경과 로고-앱 나란히 배치) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.page-container {
+    background-color: #fce4ec; /* 연한 핑크 배경 */
+    display: flex;
+    justify-content: center; /* 가운데로 모으기 */
+    align-items: center;
+    gap: 50px; /* 로고와 앱 사이 간격 */
+    min-height: 100vh;
+    font-family: 'Pretendard', sans-serif;
+}
+
+/* 2. 이마트 로고 영역 */
+.emart-logo {
+    width: 200px; 
+}
+
+.emart-logo img {
+    width: 100%;
+    mix-blend-mode: multiply; /* 배경색과 자연스럽게 합성 */
+}
+
+/* 3. 쇼핑 리스트 앱 본체 (HTML의 shopping list app 클래스 대응) */
+/* HTML에 띄어쓰기가 있으므로 아래와 같이 3개 클래스를 모두 잡거나 하나로 통일해야 합니다. */
+.shopping.list.app { 
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 2.5rem;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* 4. 타이틀 및 날짜 */
+.shopping.list.app ul { /* 1/27 부분 */
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.shopping-app__title, h1.shopping.list.app {
+    font-family: 'OngleipKonkon', sans-serif;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* 5. 입력창 그룹 (shopping-app__input-group) */
+.shopping-app__input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.shopping-app__input {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.shopping-app__input:focus {
+    border-color: #f06292;
+}
+
+/* 6. 기록 버튼 (todo-app__add-button) */
+.shopping-app__add-button {
+    background-color: #f06292;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.shopping-app__add-button:hover {
+    background-color: #ec407a;
+}
+
+/* 7. 합계 금액 박스 */
+.total-price-box {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#total-display {
+    color: #f06292;
+    font-size: 1.2rem;
+}
+
+/* 8. 리스트 영역 (shopping-app__list) */
+.shopping-app__list {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* JS로 추가될 아이템 스타일 */
+.shopping-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
