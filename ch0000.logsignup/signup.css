@@ -1,0 +1,98 @@
+body {
+  /* 배경색을 어두운 회색(#5f5f5f)으로 칠해요 */
+  background-color: #5f5f5f; 
+  
+  /* 집 안에 쓰는 모든 기본 글자색을 흰색으로 정해요 */
+  color: white; 
+  
+  /* 글꼴(폰트)을 정해요. Arial이 없으면 비슷한 sans-serif로 써라! */
+  font-family: Arial, sans-serif; 
+  
+  /* 중요! [정렬의 신 소환] 상자들을 유연하게 배치하겠다는 선언입니다 */
+  display: flex; 
+  
+  /* 상자들을 옆으로 나열하지 말고, 위에서 아래로(기둥처럼) 세워요 */
+  flex-direction: column; 
+  
+  /* 세워진 상자들을 가로 기준으로 '가운데'에 딱 맞춥니다 */
+  align-items: center; 
+  
+  /* 집 천장에서 50px만큼 거리를 띄워서 너무 붙지 않게 해요 */
+  padding-top: 50px; 
+}
+.section {
+  /* 방 안의 배경은 하얗게 해서 글자가 잘 보이게 해요 */
+  background-color: #ffffff; 
+  
+  /* 방 안의 글자색은 진한 회색(#333)으로 해서 가독성을 높여요 */
+  color: #333; 
+  
+  /* 방 벽과 가구 사이의 안쪽 여백을 30px만큼 줘서 답답하지 않게 해요 */
+  padding: 30px; 
+  
+  /* 딱딱한 직각형 방이 아니라, 모서리를 15px만큼 둥글게 깎아요 */
+  border-radius: 15px; 
+  
+  /* 방의 가로 너비를 350px로 고정해요 */
+  width: 350px; 
+  
+  /* 방과 방 사이(바깥쪽)에 30px 간격을 둬서 서로 떨어뜨려요 */
+  margin-bottom: 30px; 
+  
+  /* 방 아래에 부드러운 그림자를 넣어서 입체감(공중에 뜬 느낌)을 줘요 */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+}
+/* 제목(h1, h2)은 무조건 가운데 정렬! */
+h1, h2 { text-align: center; }
+
+input {
+  /* 입력창 너비를 방(section) 가로에 꽉 차게(100%) 만들어요 */
+  width: 100%; 
+  
+  /* 글자가 입력창 벽에 딱 붙지 않게 안쪽 여백을 10px 줘요 */
+  padding: 10px; 
+  
+  /* 위아래 입력창끼리 10px 간격을 띄워요 (좌우는 0) */
+  margin: 10px 0; 
+  
+  /* 얇고 연한 회색(#ddd) 실선 테두리를 그려요 */
+  border: 1px solid #ddd; 
+  
+  /* 입력창 모서리도 살짝(5px) 둥글게 만들어요 */
+  border-radius: 5px; 
+  
+  /* 중요! 패딩이나 테두리를 아무리 넣어도 가로 100%를 넘지 않게 가둬둬요 */
+  box-sizing: border-box; 
+}
+
+button {
+  /* 버튼도 가로로 꽉 차게 만들어요 */
+  width: 100%; 
+  
+  /* 버튼의 위아래 두께를 12px로 통통하게 만들어요 */
+  padding: 12px; 
+  
+  /* 버튼 배경은 초록색(#4CAF50)으로 눈에 띄게 해요 */
+  background-color: #4CAF50; 
+  
+  /* 버튼 안의 글자는 흰색으로! */
+  color: white; 
+  
+  /* 버튼의 기본 검정 테두리를 아예 없애버려요 */
+  border: none; 
+  
+  /* 버튼 모서리도 5px 둥글게! */
+  border-radius: 5px; 
+  
+  /* 마우스를 올리면 클릭할 수 있다는 '손가락 모양'으로 바꿔줘요 */
+  cursor: pointer; 
+  
+  /* 글자를 두껍게 해서 강조해요 */
+  font-weight: bold; 
+}
+
+/* 마우스를 올렸을 때(hover)만 적용되는 특수 효과! */
+button:hover {
+  /* 배경색을 살짝 더 진한 초록색으로 바꿔서 "나 눌릴 준비 됐어!"라고 알려줘요 */
+  background-color: #45a049; 
+}
